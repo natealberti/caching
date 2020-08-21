@@ -1,0 +1,5 @@
+com\example\caching\SimpleBookRepository.class
+com\example\caching\CachingApplication.class
+com\example\caching\Book.class
+com\example\caching\BookRepository.class
+com\example\caching\AppRunner.class
