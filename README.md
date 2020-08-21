@@ -1,2 +1,4 @@
 # caching
 Caching with Spring Boot
+
+Caching is made really easy with Spring Boot. Following the Spring guide, I created a simple application that returned ISBN numbers and names of books from a library I created. It ran through each of them. I created a method that would purposefully slow down the process and add three seconds of delay before moving on to the next book, to simulate a heavy program running slow. With a few simple annotations, caching sped up the return rates significantly. On the main application class, CachingApplication, placing @EnableCaching below the Spring Boot Application annotation lets the compiler look for methods that have @Cachable. Putting this on the getIsbn method sped up the process because the compiler was able to use cacheing while calling those commands on the shell.
